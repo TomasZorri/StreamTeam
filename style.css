@@ -1,0 +1,405 @@
+/*
+Theme Name: Stream Team
+Author: Tomas Zorrilla
+Description: Un tema personalizado para Stream Team.
+Version: 2.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mi-tema
+*/
+
+
+body {
+	margin: 0;
+}
+
+/* General Config */
+.callactionsContactWhatsapo {
+	font-family: "Poppins", serif;
+	font-size: 18px;
+	padding: 10px 15px;
+	color: #000;
+	text-decoration: none;
+	background: #FAE300;
+	border-radius: 18px;
+	 cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.callactionsContactCotizacion {
+	font-family: "Poppins", serif;
+	font-size: 18px;
+	padding: 10px 15px;
+	color: #000;
+	text-decoration: none;
+	background: #fff;
+	border-radius: 18px;
+	border: 1px solid #000;
+    min-width: 197px;
+    text-align: center;
+     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.callactionsContactWhatsapo:hover, .callactionsContactCotizacion:hover {
+    transform: scale(1.1);
+}
+.SubTitleGeneric {
+    font-family: "Poppins", serif;
+    font-size: 21px;
+    line-height: 65px;
+    font-weight: 900;
+    margin: 0;
+}
+
+
+
+
+/* Header */
+#header .wp-block-columns {
+	margin: 0!important;
+}
+#header #menu-menu-principal {
+	display: flex;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: end;
+}
+#header #menu-menu-principal a {
+	font-family: "Poppins", serif;
+	font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+/* Hero */
+.hero {
+	position: relative;
+}
+.hero .heroimg {
+	width: 100%;
+	height: 100%;
+}
+.hero .contentHero {
+	position: absolute;
+    top: 50%;
+    left: 17.6%;
+    transform: translate(-30%, -50%);
+    width: calc(50% - 100px);
+}
+.hero h1 {
+	font-family: "Poppins", serif;
+	line-height: 65px;
+	font-size: 51px;
+	color: #FAE300;
+    font-weight: 400;
+    margin: 0;
+}
+.hero p {
+	font-family: "Poppins", serif;
+	font-size: 18px;
+	color: #fff;
+    margin: 28px 0 38px 0;
+}
+
+
+
+
+/* Servicios*/
+.servicios .SubTitleGeneric {
+    max-width: 1650px;
+    width: 90%;
+    margin: 30px auto 0;
+}
+.servicios .slick-list {
+    padding-top: 54px;
+}
+.servicios .item {
+	background: #FAE300;
+    padding: 49px 25px;
+    border-radius: 60px;
+    min-height: 398px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+}
+.servicios .item img {
+    position: absolute;
+    top: -9%;
+    left: 7%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100px;
+}
+.servicios .item img[src*="Group-13-1.png"] {
+    width: 75px;
+}
+.servicios .item h4 {
+	font-family: "Poppins", serif;
+	font-size: 36px;
+	line-height: 46px;
+	font-weight: 900;
+	margin: 0;
+	min-height: 92px;
+}
+.servicios .item p {
+	font-family: "Poppins", serif;
+	font-size: 18px;
+}
+
+
+
+
+/* Nosotros */
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1650px;
+    margin: 60px auto;
+    width: 90%;
+}
+
+.nosotros .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.nosotros .item img {
+    height: auto;
+}
+
+.nosotros .item:nth-child(odd) {
+    flex-direction: row-reverse; /* Impar: Imagen a la derecha */
+}
+
+.nosotros .item:nth-child(even) {
+    flex-direction: row; /* Par: Imagen a la izquierda */
+}
+.nosotros .contenido{
+    width: 50%;
+    display: grid;
+    justify-items: start;
+    gap: 9px;
+}
+.nosotros .contenido p {
+	font-family: "Poppins", serif;
+	font-size: 18px;
+}
+
+
+
+
+
+/* Contacto */
+.contacto {
+	max-width: 1650px;
+    margin: 60px auto;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacto .contenido {
+	width: 50%;
+    display: grid;
+    gap: 10px;
+    justify-items: start;
+}
+.contacto .contenido h3 {
+	font-family: "Poppins", serif;
+	font-size: 51px;
+	line-height: 65px;
+	font-weight: 400;
+	margin: 0;
+}
+.contacto .contenido p {
+	font-family: "Poppins", serif;
+}
+.contacto .contentButtons {
+	display: grid;
+	gap: 10px;
+}
+
+
+
+
+
+/* Footer */
+#footer .wp-block-columns {
+	margin: 0!important;
+}
+#footer .footertext {
+	margin: 0;
+}
+#footer .footertext a {
+	font-family: "Poppins", serif;
+	font-size: 12px;
+	text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+#footer .wp-block-column {
+	display: grid;
+	align-items: center;
+}
+#footer .is-layout-flex {
+	justify-content: end;
+}
+
+#footer .is-layout-flex a svg {
+    filter: grayscale(100%) brightness(0%);
+}
+
+#footer .boton_whastapp_fixed {
+	position: fixed;
+    bottom: 30px;
+    right: 12px;
+    z-index: 99;
+	width: 54px;
+	transition: transform 0.2sease-in-out;
+}
+#footer .boton_whastapp_fixed:hover {
+    transform: scale(1.1);
+}
+#footer .boton_whastapp_fixed img {
+	width: 100%;
+}
+
+
+
+@media only screen and (min-width: 1469px) {
+	.hero .contentHero{
+	    left: 20.2%;
+	}
+	
+	.servicios .item {
+		min-height: 317px;
+		padding: 49px 25px 20px;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	/* Hero */
+	.hero .contentHero {
+		width: 90%;
+	    margin: 0 auto;
+	    left: 15%;
+	    top: 18%;
+	    transform: translate(-10%, -25%);
+	}
+	.hero h1 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.hero p {
+		font-size: 12px;
+	}
+	.hero .callactionsContactWhatsapo {
+		font-size: 12px;
+	}
+
+
+
+	/* Servicios */
+	.servicios .slick-list {
+		padding: 54px 29px!important;
+	}
+	.servicios .item img {
+		top: -7%;
+    	left: 15%;
+    	width: 79px;
+	}
+	.servicios .item img[src*="Group-13-1.png"] {
+	    width: 54px;
+	}
+	.servicios .item {
+		min-height: 306px;
+        padding: 37px 15px 20px;
+	}
+	.servicios .item h4 {
+		font-size: 20px;
+		line-height: 24px;
+		min-height: 48px;
+	}
+	.servicios .item p {
+		font-size: 12px;
+	}
+
+
+
+
+	/* Nosotros */
+	.nosotros .item {
+		display: grid;
+	}
+	.nosotros .item img {
+		order: 2;
+		width: 100%;
+	}
+	.nosotros .contenido {
+		width: 100%;
+	}
+
+	/* Contacto */
+	.contacto {
+		display: grid;
+	}
+	.contacto .contenido {
+		width: 100%;
+	}
+	.contacto .contenido h3 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.contacto .contenido p {
+		font-size: 10px;
+	}
+	.contacto img {
+		width: 100%;
+	}
+	.contacto .contentButtons {
+        display: flex;
+    	width: 100%;
+	}
+	.contacto .contentButtons .callactionsContactWhatsapo {
+		width: 59%;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 12px;
+        padding: 13px 6px;
+	}
+	.contacto .contentButtons .callactionsContactCotizacion {
+		font-size: 11px;
+        min-width: auto;
+        padding: 10px 5px;
+	}
+
+
+
+	/* Footer */
+	#footer .is-layout-flex.contentmasterfooter {
+		background-color: #fae300;
+	    display: grid;
+	    grid-template-columns: 69% 32%;
+	    gap: 0;
+	    padding: 10px;
+	} 
+	
+	#footer ul.is-layout-flex {
+		gap: 5px;
+	}
+	#footer .is-layout-flex a svg {
+		font-size: 19px;
+	}
+	#footer .footertext {
+		font-size: 9px;
+	}
+}
