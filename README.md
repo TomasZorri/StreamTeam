@@ -17,7 +17,7 @@ This block highlights your message and helps visitors better understand the valu
 
 Below is an example image to preview how the section may look:
 
-![Stream Team Preview](https://raw.githubusercontent.com/TomasZorri/StreamTeam/main/screenshot.jpeg)
+![Stream Team Preview](https://github.com/TomasZorri/StreamTeam/blob/main/screenshot.jpeg?raw=1)
 
 Replace the placeholder URL with your actual image link.
 
